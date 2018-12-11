@@ -31,6 +31,14 @@ public class CityController implements
         currentCity = citySessionBean.find(currentCity.getCityId());
     }
 
+    public void action(){
+        System.out.println("Action Method ...");
+    }
+
+    public void actionListener(){
+        System.out.println("Action Listener Method ...");
+    }
+
     public CityEntity getCurrentCity() {
         return currentCity;
     }

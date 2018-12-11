@@ -19,7 +19,8 @@
             <h:inputText id="cityId" value="#{cityController.currentCity.cityId}"/>
 
             <h:commandButton id="findCityBtn" value="Find"
-                             action="#{cityController.findCity}">
+                             action="#{cityController.action}" actionListener="#{cityController.actionListener}">
+                <f:actionListener binding="#{cityController.actionListener()}" />
                 <f:ajax render="cityName"/>
             </h:commandButton>
             <br/><br/>
